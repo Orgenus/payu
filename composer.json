@@ -12,12 +12,12 @@
   "minimum-stability": "dev",
   "require": {
       "php": ">=5.4.0",
-      "illuminate/support": "5.2.*",
-      "openpayu/openpayu" : "2.2.*"
+      "illuminate/support": "5.2.*"
   },
   "autoload": {
       "psr-4": {
-          "Orgenus\\Payu\\": "src/"
+          "Orgenus\\Payu\\": "src/",
+          "Orgenus\\PayuAlu\\": "src/PayU"
       }
   }
 }
