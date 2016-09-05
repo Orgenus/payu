@@ -1,0 +1,22 @@
+{
+    "name": "orgenus/payu",
+    "description": "Payu Odeme Sistemi",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Orgenus",
+            "email": "obasli@unlembilisim.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Orgenus\\Payu\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5",
+        "openpayu/openpayu" : "2.2.*"
+    }
+}
