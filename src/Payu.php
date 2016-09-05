@@ -1,5 +1,5 @@
 <?php
-
+namespace Orgenus\Payu;
 /**
  * Created by PhpStorm.
  * User: orhangazibasli2
