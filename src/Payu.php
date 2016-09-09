@@ -81,13 +81,13 @@ class Payu
       
     public function setInstallmentsNumber($s)
     {
-        $this->aluOrder->withInstallmentsNumber(date('Y-m-d H:i:s', strtotime($s)));
+        $this->aluOrder->withInstallmentsNumber($s);
     }
 
 
     public function setOrderDate($s)
     {
-        $this->aluOrder->withOrderDate(date('Y-m-d H:i:s', strtotime($s)));
+        $this->aluOrder->withOrderDate(gmdate('Y-m-d H:i:s', strtotime($s)));
     }
 
    public function addProduct($code, $name, $price, $vat, $quantity)
