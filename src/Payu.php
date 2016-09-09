@@ -52,7 +52,7 @@ class Payu
     public function __construct($county = "TR", $timeOut = 1000, $paymentMethod = "CCVISAMC")
     {
         $this->aluCfg = new MerchantConfig(config('payu.MERCHANT_ID'), config('payu.SECRET'), $county);
-        $this->aluUser = new User(\Illuminate\Http\Request::getClientIP());
+        $this->aluUser = new User($_SERVER['REMOTE_ADDR']);
         $this->aluOrder = new Order();
         $this->aluBilling = new Billing();
         $this->aluDelivery = new Delivery();
