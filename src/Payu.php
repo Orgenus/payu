@@ -78,6 +78,12 @@ class Payu
     {
         $this->aluOrder->withCurrency($s);
     }
+      
+    public function setInstallmentsNumber($s)
+    {
+        $this->aluOrder->withInstallmentsNumber(date('Y-m-d H:i:s', strtotime($s)));
+    }
+
 
     public function setOrderDate($s)
     {
